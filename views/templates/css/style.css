@@ -29,6 +29,13 @@ img{
 ****************
 header index*/
 
+.zoom {
+  transition: transform 0.2s ease-in-out; 
+}
+
+.zoom:hover {
+  transform: scale(1.1); 
+}
 
 
 #header{
