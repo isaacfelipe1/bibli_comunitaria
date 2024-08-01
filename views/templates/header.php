@@ -28,8 +28,7 @@
             <button><a href="login"><!-- <i class="bi bi-person-circle"></i> -->Entrar</a></button>
           </div>
         </div>
-      </nav>
-                
+      </nav> 
             <span class="square"></span>
             <h1> Biblioteca Comunitária<br> Maria Dolores</h1>
         </div>
