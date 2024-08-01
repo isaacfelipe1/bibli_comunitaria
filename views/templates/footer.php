@@ -16,7 +16,7 @@
         <div id="outras-informacoes" class="outras-informacoes">
           <p><a style="color:#eff3f4" href="https://goo.gl/maps/t4yDenK7SBRo2d5P9">Rua da Felicidade, N°3725 Jardim Amanda, Itacoatiara, AM, Brazil</a></p>
           <p><a style="color:#eff3f4" href="bcmd@gmail.com">bcmd@gmail.com</a> </p>
-          <p>Desenvolvido por João Filho &reg  </p>
+          <p>Desenvolvido pelo projeto de extensão  &reg  </p>
         </div>
             
       </div>
