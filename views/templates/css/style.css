@@ -201,6 +201,33 @@ body{
 .btn:hover, .service .btn:hover{
   background-color:#1e7243;
 }
+.btn span {  
+  cursor: pointer;  
+  display: inline-block;  
+  position: relative;  
+  transition: 0.5s; 
+  padding: 15px;
+}
+.btn span:after { 
+  cursor: pointer; 
+  content: '\00bb'; 
+  display: inline-block; 
+  position: absolute; 
+  opacity: 0;
+  top: 0;
+  right: -20px; 
+  transition: 0.5s; 
+  padding: 15px;
+}
+
+.btn:hover span {
+  padding-right: 25px; 
+}
+
+.btn:hover span:after {
+  opacity: 1; 
+  right: 0; 
+}
 
 
 .text-image-section {
