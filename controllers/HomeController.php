@@ -1,8 +1,5 @@
 <?php
 	namespace controllers;
-	/**
-	* 
-	*/
 	class HomeController extends Controller
 	{
 		

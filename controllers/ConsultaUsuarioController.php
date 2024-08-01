@@ -1,8 +1,5 @@
 <?php
 	namespace controllers;
-	/**
-	* 
-	*/
 	class ConsultaUsuarioController extends Controller
 	{
 		

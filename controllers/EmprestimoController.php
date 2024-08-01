@@ -1,8 +1,5 @@
 <?php
 	namespace controllers;
-	/**
-	* 
-	*/
 	class EmprestimoController extends Controller
 	{
 		

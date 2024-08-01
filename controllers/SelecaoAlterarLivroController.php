@@ -1,8 +1,5 @@
 <?php
 	namespace controllers;
-	/**
-	* 
-	*/
 	class SelecaoAlterarLivroController extends Controller
 	{
 		

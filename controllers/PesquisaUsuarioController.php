@@ -1,8 +1,5 @@
 <?php
 	namespace controllers;
-	/**
-	* 
-	*/
 	class PesquisaUsuarioController extends Controller
 	{
 		

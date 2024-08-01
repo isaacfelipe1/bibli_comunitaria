@@ -1,8 +1,6 @@
 <?php
 	namespace controllers;
-	/**
-	* 
-	*/
+	
 	class CadastroAlunoController extends Controller
 	{
 		
