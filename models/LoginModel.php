@@ -21,7 +21,7 @@ class LoginModel extends Model
                 // Senha está correta
                 $_SESSION['user'] = $nome_usuario;
                 echo "<script> function cadastro(){
-                    alert('Login realizado com sucesso!')
+                    
                 }
                 cadastro();
                 window.location.href='menu';
