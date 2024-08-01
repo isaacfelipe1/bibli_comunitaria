@@ -8,7 +8,7 @@
             Além de propiciar o acesso a diversidade literária para a comunidade, a biblioteca realiza rodas de leituras,
             rodas musicais, concurso de poesia e desenho e oficinas de contação de histórias.
             </h2>
-            <a href="#" class="btn">Saiba Mais</a>
+            <a href="#" class="btn">Saiba Mais </a>
         </div>
         <div class="imagem-container">
             <img  src="views/templates/img/bibli2.jpg" alt="livros">   
