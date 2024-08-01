@@ -17,7 +17,7 @@ $cad->logar();
             </div>
 
             <div class="div-campo-login">
-                <input name="nome_usuario" id="input-login" type="text" placeholder="Joao Filho">
+                <input name="nome_usuario" id="input-login" type="text" >
             </div>
         </div>
         
