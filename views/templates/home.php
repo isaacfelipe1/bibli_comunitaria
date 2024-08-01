@@ -12,10 +12,9 @@
             <a href="#" class="btn">Saiba Mais</a>
         </div>
         <div class="imagem-container">
-            <img src="/views/templates/img/bibli2.JPG" alt="livros">   
+            <img src="views/templates/img/bibli2.jpg" alt="livros">   
         </div>
     </div>
-
       <div id="other-services">
         <div class="service">
           <p class="subtitulo">Cursos Ofertados</p>
