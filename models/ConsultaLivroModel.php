@@ -6,8 +6,6 @@ date_default_timezone_set('America/Sao_Paulo');
 class ConsultaLivroModel extends Model
 {
 
-
-	//Aqui é o método para puxar os livros!
 	public static function listarLivros()
 	{
 		global $pagina;

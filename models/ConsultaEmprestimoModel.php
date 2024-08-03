@@ -4,7 +4,6 @@
 	class ConsultaEmprestimoModel extends Model
 	{
 
-		//Aqui é o método para puxar os clientes!
 		public static function listarEmprestimos(){
 		$livros = \MySql::connect()->prepare("SELECT emprestado.id_emprestimo, livros.cod_livro, usuario.id_usuario,usuario.nome, livros.letra_titulo, emprestado.status, emprestado.data_registro, emprestado.data_devolucao 
                                                 FROM usuario, livros, emprestado
