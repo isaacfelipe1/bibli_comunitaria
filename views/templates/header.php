@@ -8,12 +8,10 @@
     <link rel="stylesheet" href="views/templates/js/script.js">
     <link rel="icon" href="views/templates/img/favicon-16x16.png">
     <meta charset="UTF-8">
-    <!-- Biblioteca Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
 </head>
 <body>
-  <!-- Cabeçalho-->
     <header id="header" style="background-image:url('views/templates/img/wallpaper_biblioteca.jpg');" >
       <nav class="nav-bar">
         <div class="nav-list">

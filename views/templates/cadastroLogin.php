@@ -1,25 +1,23 @@
 <main>
-    <h2>Dados da Usuário:</h2>
+    <h2>Dados do Usuário:</h2>
     <fieldset class="fieldset-cadastro" style="margin-left: 2rem;">
-        <form class="form-cadastro" method="post" >
+        <form class="form-cadastro" method="post">
             <div class="div-label-input">
-                
                 <div class="label-input">
                     <div style="display: block;">
                         <label for=""><strong class="label-strong">*Nome de usuário:</strong></label>
                     </div>
                     <div style="display: block;">
-                        <input style="margin: 0.5rem 0 0 0;width:5vw" class="campo" type="text" name="nome_usuario" placeholder="Ex: 155" required>
+                        <input style="width: 300px; margin: 0.5rem 0 0 0;" class="campo" type="text" name="nome_usuario" placeholder="Informe seu nome aqui" required>
                     </div>
-                    
-                </div>
+                </div><br>
 
                 <div class="label-input">
                     <div>
                         <label for=""><strong class="label-strong">*Senha:</strong></label>
                     </div>
                     <div>
-                        <input style="margin: 0.5rem 0 0 0;width: 60vw;" class="campo" type="password" name="senha" placeholder="Ex: José de Alencar" required>    
+                        <input style="width: 300px; margin: 0.5rem 0 0 0;" class="campo" type="password" name="senha" placeholder="********" required>    
                     </div>
                 </div>
             </div>

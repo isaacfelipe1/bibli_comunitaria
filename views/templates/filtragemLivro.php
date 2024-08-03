@@ -12,7 +12,6 @@
                 function filtrarLivros() {
                     var cddSelecionado = document.getElementById("filtroCDD").value;
                     if (cddSelecionado) {
-                        // Use AJAX para buscar os livros com base no CDD selecionado e atualizar o resultado
                         var xhr = new XMLHttpRequest();
                         xhr.onreadystatechange = function() {
                             if (xhr.readyState === 4 && xhr.status === 200) {
@@ -22,7 +21,6 @@
                         xhr.open("GET", "consultaLivro?cdd=" + cddSelecionado, true);
                         xhr.send();
                     } else {
-                        // Caso o usuário selecione a opção vazia, limpe o resultado
                         document.getElementById("resultadoLivros").innerHTML = "";
                     }
                 }
@@ -57,5 +55,4 @@ if (isset($_GET['cdd'])) {
 
 
 <div id="listaLivros">
-    <!-- Os livros serão exibidos aqui -->
 </div>

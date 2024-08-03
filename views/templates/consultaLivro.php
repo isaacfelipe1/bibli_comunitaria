@@ -1,7 +1,5 @@
 <?php
 session_start();
-
-// Verificar se o usuário está logado
 if (!isset($_SESSION['user'])) {
     header('Location: login');
     exit;
@@ -61,18 +59,14 @@ $livros->execute();
         </div>
     </form>
     <div id="resultadoLivros">
-                <!-- Os livros serão exibidos aqui -->
             </div>
     <table id="customers" style="border: 1px solid black">
         <script>
-            // Função para formatar texto com a primeira letra de cada palavra em maiúscula
             function capitalizeWords(text) {
                 return text.replace(/\b\w/g, function(match) {
                     return match.toUpperCase();
                 });
             }
-
-            // Loop através das células da tabela e aplicação da formatação
             const cells = document.querySelectorAll('td');
             cells.forEach(cell => {
                 const originalText = cell.textContent;
