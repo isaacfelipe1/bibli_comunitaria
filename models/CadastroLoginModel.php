@@ -9,10 +9,9 @@
             $nome_usuario = $_POST["nome_usuario"];
             $senha = $_POST["senha"];
 
-            // Gerar o hash de senha
             $password_hash = password_hash($senha, PASSWORD_DEFAULT);
 
-            // Inserir o novo usuário no banco de dados
+
             $cadastro = \MySql::connect()->prepare("INSERT INTO login (username, password_hash) VALUES (?, ?)");
             $cadastro->execute([$nome_usuario, $password_hash]);
 
