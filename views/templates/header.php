@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    
     <title>Bibioteca Maria Dolores</title>
     <link rel="stylesheet"  href="views/templates/css/style.css">
     <link rel="stylesheet" href="views/templates/css/style_default.css">
@@ -19,8 +18,8 @@
             <li class="nav-item"><a href="#other-services" class="nav-link">Serviços</a></li>
             <li class="nav-item"><a href="#secao" class="nav-link">Sobre Nós</a></li>
             <li class="nav-item"><a href="#outras-informacoes" class="nav-link">Contato</a></li>
-            <li class="nav-item"><a href="menuUsuario" class="nav-link">Usuário</a></li>
-            <li class="nav-item"><a href="menu" class="nav-link">Acervo</a></li>
+            <!-- <li class="nav-item"><a href="menuUsuario" class="nav-link">Usuário</a></li> -->
+            <!-- <li class="nav-item"><a href="menu" class="nav-link">Acervo</a></li> -->
           </ul>
           <div class="login-button">
             <button><a href="login"><!-- <i class="bi bi-person-circle"></i> -->Entrar</a></button>

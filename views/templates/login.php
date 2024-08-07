@@ -32,5 +32,5 @@ $cad->logar();
 
     <input class="logar" type="submit" name="logar" value="Logar">
     </form>
-    <p style="margin-top:1rem">Não possui cadastro? Cadastre-se <a href="cadastroLogin">aqui</a></p>
+    <!-- <p style="margin-top:1rem">Não possui cadastro? Cadastre-se <a href="cadastroLogin">aqui</a></p> -->
 </fieldset>

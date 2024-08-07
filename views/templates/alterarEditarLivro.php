@@ -73,7 +73,7 @@
                     </select>
 				</div>
 			</div>
-			<input class="bt-submit" type="submit" name="bt-atualizar" value="Atualizar">
+			<input class="bt-submit " type="submit" name="bt-atualizar" value="Atualizar">
 		</form>
 </fieldset>
 </main>
