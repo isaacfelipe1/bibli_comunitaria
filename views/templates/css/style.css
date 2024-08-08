@@ -64,17 +64,6 @@ header index*/
   width: 100%;
 }
 .nav-bar{
-  /*
-  list-style-type:none;
-  overflow: hidden;
-  display: flex;
-  gap: 0.5rem;
-  background-color: #04aa6d;
-  width: 100%;
-  position: relative;
-  margin-left: 30rem;
-  width: max-content;
-  */
   background-color: #04aa6d;
   display: flex;
   justify-content: right;
