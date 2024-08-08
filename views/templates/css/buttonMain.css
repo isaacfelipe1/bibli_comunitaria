@@ -1,0 +1,17 @@
+.secao .btn{
+    color:aliceblue;
+    text-decoration: none;
+    padding: 1.2rem 1.8rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: #04aa6d;
+    border-radius: 15px;
+  }
+.secao .btn:hover{
+    background-color:#1e7243;
+    color: #fff;
+  }
+  .btn:hover, .service .btn:hover{
+    background-color:#1e7243;
+    color: #fff;
+  }

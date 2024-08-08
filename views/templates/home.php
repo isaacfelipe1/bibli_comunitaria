@@ -21,7 +21,7 @@
                 <h2 class="descricao">
                 A Obra disponibiliza à comunidade diversos cursos profissionalizantes. Confira todos abaixo.
                 </h2>
-                <a href="#" class="btn"> <span>Ver mais</span></a> 
+                <a href="#" class="btn"> Ver mais</a> 
             </div>
         </div>
         <div class="service-curso">
