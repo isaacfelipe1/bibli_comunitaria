@@ -4,6 +4,7 @@
 	<title>Livros Cadastrados</title>
 	<link rel="stylesheet" href="views/templates/css/style.css">
 	<link rel="stylesheet" href="views/templates/css/style2.css">
+    <link rel="stylesheet" href="views/templates/css/footer.css"> 
     <link rel="stylesheet" href="views/templates/js/script.js">
     <link rel="icon" href="views/templates/img/favicon-16x16.png">
 </head>

@@ -5,6 +5,7 @@
     <link rel="stylesheet"  href="views/templates/css/style.css">
     <link rel="stylesheet" href="views/templates/css/style_default.css">
     <link rel="stylesheet" href="views/templates/js/script.js">
+    <link rel="stylesheet" href="views/templates/css/footer.css"> 
     <link rel="icon" href="views/templates/img/favicon-16x16.png">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
