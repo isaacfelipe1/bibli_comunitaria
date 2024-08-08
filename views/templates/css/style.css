@@ -244,23 +244,6 @@ body{
   margin: 10px 0 10px 0;
 }
 
-#footer {
-  position:relative;
-  margin-top: 20rem;
-  bottom: 0;
-  width: 100%;
-  color: #f8f8ff;
-  background-color: #04aa6d;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  z-index: 1;
-  /* 
-  
-  footer
-
-  */
-}
 .contact-info{
   align-items: center;
   justify-items: center;
