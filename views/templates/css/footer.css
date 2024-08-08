@@ -1,16 +1,18 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
     margin: 0;
 }
 
 #footer {
-    background-color: #04aa6d; 
-    color: #eff3f4; 
+    background-color: #04aa6d;
+    color: #eff3f4;
     text-align: center;
     padding: 1rem 0;
-    margin-top: auto; 
+    margin-top: auto;
+    width: 100vw; /* Certifica-se de ocupar a largura total da viewport */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
 }
 
 .contact-info {
@@ -27,17 +29,24 @@ body {
 }
 
 .contato a {
-    color: #fff; 
+    color: #fff;
     margin: 0 20px;
     font-size: 2.5rem;
     text-decoration: none;
 }
 
 .contato i {
-    color: #fff; 
+    color: #fff;
 }
 
 .outras-informacoes p a {
     color: #eff3f4;
     text-decoration: none;
 }
+@media (max-width: 768px) {
+    .contact-info {
+      max-width: 100%; /* Permite que o conteúdo ocupe toda a largura em dispositivos móveis */
+      padding: 0 1rem; /* Adiciona um pouco de padding lateral */
+    }
+  }
+  
