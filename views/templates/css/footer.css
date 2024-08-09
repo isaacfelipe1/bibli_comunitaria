@@ -11,8 +11,8 @@ body {
     text-align: center;
     padding: 1rem 0;
     margin-top: auto;
-    width: 100%; /* Certifica-se de ocupar a largura total da viewport */
-    box-sizing: border-box; /* Inclui padding e borda na largura total */
+    width: 100%; 
+    box-sizing: border-box; /
 }
 
 .contact-info {
@@ -45,8 +45,8 @@ body {
 }
 @media (max-width: 768px) {
     .contact-info {
-      max-width: 100%; /* Permite que o conteúdo ocupe toda a largura em dispositivos móveis */
-      padding: 0 1rem; /* Adiciona um pouco de padding lateral */
+      max-width: 100%; 
+      padding: 0 1rem; 
     }
   }
   
