@@ -92,8 +92,8 @@
                         <li class="nav-item"><a href="#secao" class="nav-link">Sobre</a></li>
                         <li class="nav-item"><a href="#outras-informacoes" class="nav-link">Contato</a></li>
                         <li class="nav-item"><a href="login" class="nav-link ">Entrar</a></li>
-                        <!-- <li class="nav-item"><a href="menuUsuario" class="nav-link">Usuário</a></li> -->
-                        <!-- <li class="nav-item"><a href="menu" class="nav-link">Acervo</a></li> -->
+                        <li class="nav-item"><a href="menuUsuario" class="nav-link">Usuário</a></li>
+                        <li class="nav-item"><a href="menu" class="nav-link">Acervo</a></li>
                     </ul>
                 </div>
             </div>
