@@ -29,7 +29,7 @@
             margin: 0;
         }
         .nav-item {
-            margin: 0;
+            margin: 0 10px; 
             transition: background-color 0.3s, color 0.3s;
             list-style: none;
         }
@@ -42,7 +42,7 @@
             color: #fff;
             font-weight: 400;
             display: block;
-            padding: 20px; 
+            padding: 20px;
             transition: color 0.3s;
             font-weight: bold;
         }
@@ -102,7 +102,5 @@
         <h1>Biblioteca Comunitária<br>Maria Dolores</h1>
     </header>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-   
-
-
-
+</body>
+</html>
