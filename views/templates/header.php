@@ -70,10 +70,10 @@
             color: #fff;
         }
         .navbar-toggler-icon {
-            background-image: url('views/templates/img/HAMBURGUE.png'); /* Caminho para a imagem */
-            background-size: cover; /* Ajusta a imagem para cobrir o ícone */
-            width: 50px; /* Largura do ícone */
-            height: 100px; /* Altura do ícone */
+            background-image: url('views/templates/img/HAMBURGUE.png'); 
+            background-size: cover;
+            width: 50px; 
+            height: 100px;
             filter: brightness(0) invert(1);
             background-repeat: no-repeat;
         }  
