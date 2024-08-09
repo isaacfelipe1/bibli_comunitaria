@@ -70,8 +70,13 @@
             color: #fff;
         }
         .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-        }   
+            background-image: url('views/templates/img/HAMBURGUE.png'); /* Caminho para a imagem */
+            background-size: cover; /* Ajusta a imagem para cobrir o ícone */
+            width: 50px; /* Largura do ícone */
+            height: 100px; /* Altura do ícone */
+            filter: brightness(0) invert(1);
+            background-repeat: no-repeat;
+        }  
     </style>
 </head>
 <body>

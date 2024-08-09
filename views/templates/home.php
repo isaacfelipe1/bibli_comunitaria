@@ -11,7 +11,7 @@
             <a href="https://mostracultural.obrasocialchicoxavier.com.br/assets/templates/subTrabalhos.html" target="_blank" class="btn">Acesse nosso site de Eventos</a>
         </div>
         <div class="container-fluid">
-            <img src="views/templates/img/bibli2.jpg" alt="livros">   
+            <img src="views/templates/img/espaco_leitura1.jpg" alt="livros">   
         </div>
     </div>
 
