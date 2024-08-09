@@ -41,7 +41,7 @@
             <img class="img_views" src="views/templates/img/criancas.JPG" alt="Cinema na biblioteca" />
             <div class="service-info">
                 <h3>Cinema na biblioteca</h3>
-                <p style="text-align: justify;">
+                <p style="text-align: justify; text-indent: 1; align: justify">
                     A instituição oferece sessões de filmes especialmente selecionados com o propósito de promover o desenvolvimento do senso crítico de forma lúdica e envolvente. Os alunos são convidados a assistir a filmes que abordam temas relevantes e significativos, estimulando a reflexão e a análise das mensagens transmitidas pelas obras cinematográficas.
                 </p>
             </div>
