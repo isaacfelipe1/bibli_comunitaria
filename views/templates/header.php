@@ -16,7 +16,7 @@
     <style>
         .nav-bar {
             /* background-color: #04aa6d; */
-            padding: 35px;
+            padding: 20px;
         }
         .nav-list {
             display: flex;

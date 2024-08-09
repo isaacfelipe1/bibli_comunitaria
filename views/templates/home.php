@@ -10,10 +10,11 @@
             </h2>
             <a href="https://mostracultural.obrasocialchicoxavier.com.br/assets/templates/subTrabalhos.html" target="_blank" class="btn">Acesse nosso site de Eventos</a>
         </div>
-        <div class="container-fluid">
-            <img src="views/templates/img/espaco_leitura1.jpg" alt="livros">   
+        <div class="container">
+            <img  src="views/templates/img/espaco_leitura1.jpg" alt="livros">   
         </div>
     </div>
+    <div class="container-fluid">
 
     <div id="other-services">
         <div class="service">
@@ -57,5 +58,6 @@
                 </p>
             </div>
         </div>
+    </div>
     </div>
 </main>

@@ -225,6 +225,23 @@ body{
   text-align: center;
   margin: 10px 0 10px 0;
 }
+@media (max-width: 768px) {
+  .service,
+  .service-curso {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .img_views {
+    width: 100%;
+  }
+
+  .service-info .btn {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
 
 #footer {
   position:relative;
