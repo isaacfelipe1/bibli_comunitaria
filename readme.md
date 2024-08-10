@@ -1,2 +1,2 @@
 ## Sistema da Biblioteca
-![Perfil](img/pagina_inicial.png)
+![Pagina Inicial](img/pagina_inicial.png)
