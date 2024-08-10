@@ -1,10 +1,18 @@
-<?php 
-session_start();
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 if (!isset($_SESSION['user'])) {
     header('Location: login');
     exit;
 }
 ?>
+<form method="post" action="">
+    <p>
+        <button class="bt-logout" type="submit" name="logout"><i style="color:#047f52; font-size: 2.5rem" class="bi bi-box-arrow-left"></i> </button>
+    </p>
+</form>
 <div id="div-cadastro">
     <div id="div-opcao-cadastro">
         <a href="cadastroUsuario">
