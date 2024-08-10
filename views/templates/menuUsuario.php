@@ -54,8 +54,6 @@ if (!isset($_SESSION['user'])) {
             <a id="a-opcao-cadastro" href="formPesquisaUsuario">Pesquisar Usuário</a>
         </a>
     </div>
-
-    <!-- Novo card para cadastro -->
     <div id="div-opcao-cadastro" style="display:inline-block; margin-top: 1rem;">
         <a href="cadastroLogin">
             <center><i class="bi bi-person-plus" style="color:black; font-size: 2.5rem;"></i></center>
