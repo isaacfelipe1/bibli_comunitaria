@@ -617,6 +617,11 @@ form input[type="number"]{
   margin: 5rem 10 rem auto;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#div-opcao-cadastro:hover{
+  background-color: #f0f0f0;
+  transform: translateY(-3px); 
 }
 #a-opcao-cadastro{
   padding: 2rem 2rem;
@@ -628,8 +633,6 @@ form input[type="number"]{
 .div-cadastro .div-opcao-cadastro #a-opcao-cadastro i{
   background-color: #d92123;
 }
-
-
 
 .bi-house{
   margin: 0 15px;
@@ -656,7 +659,6 @@ form input[type="number"]{
   margin-right: 3rem;
   margin-bottom: 2rem;
   }
-
 @media screen and (max-width: 984px){
   .secao{
     display: block;
@@ -695,7 +697,6 @@ form input[type="number"]{
 
   }
 }
-
 
 @media screen and (max-width: 768px){
   #div-opcao-cadastro{
@@ -762,7 +763,11 @@ form input[type="number"]{
     justify-content: left;
     margin: 5.4rem 1rem 0 1rem;
     }
-  
+    #div-cadastro:hover
+    {
+      transform: scale(1.01);
+      background-color: #047f52;
+    }
   #div-opcao-cadastro{
     width: 50px;
     display: inline-block;
