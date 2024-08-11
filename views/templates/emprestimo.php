@@ -45,11 +45,6 @@ $usuario->execute();
                 </div>
                 
             </div>
-            
-            
-
-
-
             <!--  
             <div class="label-input">
                 <div class="label-input">

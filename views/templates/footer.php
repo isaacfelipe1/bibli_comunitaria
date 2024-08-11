@@ -1,5 +1,3 @@
-
-
 <footer id="footer">
     <div class="contact-info">
         <div class="footer-brand">

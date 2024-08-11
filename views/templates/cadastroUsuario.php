@@ -67,9 +67,6 @@
                     </select>   
                 </div>
             </div>
-
-            
-
             <div class="label-input">
                 <div>
                     <label for=""><strong class="label-strong">Telefone:</strong></label>    

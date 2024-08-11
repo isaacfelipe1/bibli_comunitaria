@@ -1,11 +1,7 @@
-
-
-
 <select id="filtroCDD" onchange="filtrarLivros()">
                 <option value="">Selecione um código CDD</option>
                 <option value="028.5">Literatura Infantil/Juvenil</option>
                 <option value="869">Educação</option>
-                <!-- Adicione mais opções de CDD conforme necessário -->
             </select>
 
             <script>
@@ -25,9 +21,6 @@
                     }
                 }
             </script>
-
-
-
 
 $conn = \MySql::connect();
 

@@ -68,9 +68,6 @@ if (!isset($_SESSION['user'])) {
                         </select> 
                     </div>
                 </div>
-
-
-
                 <div class="label-input">
                     <div>
                         <label for=""><strong class="label-strong">Edição:</strong></label>
