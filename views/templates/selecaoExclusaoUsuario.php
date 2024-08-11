@@ -7,42 +7,48 @@ if (!isset($_SESSION['user'])) {
 ?>
 <main>
     <h2>Excluir Usuários</h2>
-<form method="post">
-<table id="customers" style="border: 1px solid black">
-<tr>
-        <th>#</th>
-        <th>Codigo</th>
-        <th>Nome</th>
-        <th>Sexo</th>
-        <th>Idade</th>
-        <th>Telefone</th>
-        <th>Endereco</th>
-        <th>Observacao</th>
-</tr>
-<?php 
-    $livros = models\ConsultaUsuarioModel::listarUsuarios();
-    foreach ($livros as $value) {
-?>
-    <tr>
-        <td><input type="radio" name="codigo" value="<?php echo $value['id_usuario']?>" required></td>
-        <td><?php echo $value['id_usuario']?></td>
-        <td><?php echo $value['nome']?></td>
-        <td><?php echo $value['sexo']?></td>
-        <td><?php echo $value['idade']?></td>
-        <td><?php echo $value['telefone']?></td>
-        <td><?php echo $value['endereco']?></td>
-        <td><?php echo $value['observacao']?></td>
-    </tr>
+    <form method="post">
+        <div class="table-container">
+            <table id="customers">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Sexo</th>
+                        <th>Idade</th>
+                        <th>Telefone</th>
+                        <th>Endereço</th>
+                        <th>Observação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php 
+                        $usuarios = models\ConsultaUsuarioModel::listarUsuarios();
+                        foreach ($usuarios as $value) {
+                    ?>
+                    <tr>
+                        <td><input type="radio" name="codigo" value="<?php echo $value['id_usuario']?>" required></td>
+                        <td><?php echo $value['id_usuario']?></td>
+                        <td><?php echo $value['nome']?></td>
+                        <td><?php echo ($value['sexo'] == 1) ? 'Masculino' : 'Feminino'; ?></td>
+                        <td><?php echo $value['idade']?></td>
+                        <td><?php echo $value['telefone']?></td>
+                        <td><?php echo $value['endereco']?></td>
+                        <td><?php echo $value['observacao']?></td>
+                    </tr>
+                    <?php 
+                        }
+                    ?>
+                </tbody>
+            </table>
+        </div>
+        <input class='bt-submit' type='submit' name='bt_excl' value='Excluir'>
+    </form>
+</main>
 
-<?php 
-    }
-?>
-</table>
-    <input style="margin-left: 2rem;" class='bt-submit' type='submit' name='bt_excl' value='Excluir'>
-</form>
 <?php
 use models\SelecaoExclusaoUsuarioModel;
 $excl = new SelecaoExclusaoUsuarioModel();
 $excl->excluirUsuarios();
 ?>
-</main>
