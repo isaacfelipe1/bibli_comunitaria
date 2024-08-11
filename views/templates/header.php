@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,7 +19,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
         .nav-bar {
-            /* background-color: #04aa6d; */
             padding: 20px;
         }
         .nav-list {
@@ -40,11 +43,10 @@
             text-decoration: none;
             font-size: 1rem;
             color: #fff;
-            font-weight: 400;
+            font-weight: bold;
             display: block;
             padding: 20px;
             transition: color 0.3s;
-            font-weight: bold;
         }
         .nav-link:hover {
             color: #ffffff;
@@ -81,25 +83,30 @@
 </head>
 <body>
 <header id="header" style="background-image:url('views/templates/img/2.png');">
-        <nav class="navbar navbar-expand-lg nav-bar">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav nav-list">
-                        <li class="nav-item"><a href="#other-services" class="nav-link">Serviços</a></li>
-                        <li class="nav-item"><a href="#secao" class="nav-link">Sobre</a></li>
-                        <li class="nav-item"><a href="#outras-informacoes" class="nav-link">Contato</a></li>
-                        <li class="nav-item"><a href="login" class="nav-link ">Entrar</a></li>
-                        <li class="nav-item"><a href="menuUsuario" class="nav-link">Usuário</a></li>
-                        <li class="nav-item"><a href="menu" class="nav-link">Acervo</a></li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg nav-bar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-list">
+                    <li class="nav-item"><a href="#other-services" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="#secao" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#outras-informacoes" class="nav-link">Contato</a></li>
+                    <?php if (isset($_SESSION['user'])): ?>
+                        <li class="nav-item"><span class="nav-link">Bem-vindo, <?php echo htmlspecialchars($_SESSION['user']); ?>!</span></li>
+                    <?php else: ?>
+                        <li class="nav-item"><a href="login" class="nav-link">Entrar</a></li>
+                    <?php endif; ?>
+                    <li class="nav-item"><a href="menuUsuario" class="nav-link">Usuário</a></li>
+                    <li class="nav-item"><a href="menu" class="nav-link">Acervo</a></li>
+                </ul>
             </div>
-        </nav>
-        <span class="square "></span>
-        <h1>Biblioteca Comunitária<br>Maria Dolores</h1>
-    </header>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+        </div>
+    </nav>
+    <span class="square"></span>
+    <h1>Biblioteca Comunitária<br>Maria Dolores</h1>
+</header>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

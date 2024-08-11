@@ -8,9 +8,15 @@ if (!isset($_SESSION['user'])) {
     exit;
 }
 ?>
+
 <form method="post" action="">
-    <p>
-        <button class="bt-logout" type="submit" name="logout"><i style="color:#047f52; font-size: 2.5rem" class="bi bi-box-arrow-left"></i> </button>
+    <p style="margin-top: 20px; margin-left: 20px">
+        <button class="bt-logout" type="submit" name="logout">
+            <i style="color:#047f52; font-size: 2.5rem" class="bi bi-box-arrow-left"></i>
+        </button>
+        <button class="bt-back" type="button" onclick="window.location.href='home'">
+            <i style="color:#047f52; font-size: 2.5rem" class="bi bi-arrow-left-circle"></i>
+        </button>
     </p>
 </form>
 
@@ -21,7 +27,7 @@ if (!isset($_SESSION['user'])) {
     </div>
 
     <div id="div-opcao-cadastro">
-        <a href="emprestimo"> <center><i class="bi bi-book" style="color:black; font-size: 2.5rem"></i></center>
+        <a href="emprestimo"><center><i class="bi bi-book" style="color:black; font-size: 2.5rem"></i></center>
         <a id="a-opcao-cadastro" href="emprestimo">Emprestimo</a>
     </div>
 

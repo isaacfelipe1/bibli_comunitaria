@@ -8,11 +8,11 @@ if (!isset($_SESSION['user'])) {
     exit;
 }
 ?>
-<form method="post" action="">
+<!-- <form method="post" action="">
     <p>
         <button class="bt-logout" type="submit" name="logout"><i style="color:#047f52; font-size: 2.5rem" class="bi bi-box-arrow-left"></i> </button>
     </p>
-</form>
+</form> -->
 <div id="div-cadastro">
     <div id="div-opcao-cadastro">
         <a href="cadastroUsuario">
