@@ -166,7 +166,7 @@
             <div class="submit-reset">
                 <input class="bt-submit" type="submit" name="bt_enviar" value="Enviar">
             </div>
-            <div class="submit-reset">
+            <div class="div-submit-reset">
                 <input class="bt-reset" type="reset" name="limpar" value="Limpar">
             </div>
         </div>
