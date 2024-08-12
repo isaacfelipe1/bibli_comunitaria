@@ -41,7 +41,6 @@ session_start();
         }
         .nav-link {
             text-decoration: none;
-            font-size: 1rem;
             color: #fff;
             font-weight: bold;
             display: block;
@@ -78,7 +77,8 @@ session_start();
             height: 100px;
             filter: brightness(0) invert(1);
             background-repeat: no-repeat;
-        }  
+        }
+
     </style>
 </head>
 <body>
@@ -94,7 +94,7 @@ session_start();
                     <li class="nav-item"><a href="#secao" class="nav-link">Sobre</a></li>
                     <li class="nav-item"><a href="#outras-informacoes" class="nav-link">Contato</a></li>
                     <?php if (isset($_SESSION['user'])): ?>
-                        <li class="nav-item"><span class="nav-link">Bem-vindo, <?php echo htmlspecialchars($_SESSION['user']); ?>!</span></li>
+                        <li class="nav-item"><span class="nav-link">Olá, <?php echo htmlspecialchars($_SESSION['user']); ?>!</span></li>
                     <?php else: ?>
                         <li class="nav-item"><a href="login" class="nav-link">Entrar</a></li>
                     <?php endif; ?>

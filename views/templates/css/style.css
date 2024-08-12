@@ -65,6 +65,7 @@ header index*/
 
 .nav-item {
   margin: 0 0 0px;
+ 
 }
 
 .nav-link {
@@ -264,8 +265,7 @@ body{
   position: relative;
   margin-bottom: 2rem;
   margin-top: 1rem;
-}
-.footer-brand h3{
+}.footer-brand h3{
   color: var(--primary-text-color);
   font-size: 1.5rem;  
   width: max-content;
@@ -423,8 +423,8 @@ tela de consulta de livros*/
 /* Estilo do Contêiner Responsivo */
 /* Estilo do Contêiner Responsivo */
 .table-container {
-  width: 100%; 
-  max-height: 400px; 
+  max-height: 250px; /* Ajuste para altura máxima do container da tabela conforme necessário */
+  max-width: 95%; /* Ajuste para largura máxima do container da tabela conforme necessário */
   overflow-x: auto; 
   overflow-y: auto; 
   margin: 1rem 2rem 3rem; 
@@ -432,10 +432,30 @@ tela de consulta de livros*/
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   border-radius: 5px; 
   background-color: #ffffff; 
+   
+  
+  
+  
 }
 
 /* Estilo da Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+ 
+}
+thead th {
+  position: sticky;
+  top: 0;
+  background-color: #f9f9f9; /* Cor de fundo para o cabeçalho */
+  z-index: 1; /* Garante que o cabeçalho fique acima do conteúdo da tabela */
+  border-bottom: 1px solid #ddd; /* Adiciona uma borda ao final do cabeçalho */
 
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Cor de fundo alternada para linhas pares */
+}
 .table-container {
   width: 100%;
   max-height: 400px; 
@@ -479,11 +499,13 @@ tela de consulta de livros*/
 }
 
 #customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
+  /* padding-top: 0; */
+  /* padding-bottom: 12px; */
+  text-align: center;
   background-color: #04aa6d;
   color: white;
+  padding: 25px;
+  width: 45px;
 }
 
 /* Estilo dos Campos de Pesquisa */
@@ -735,6 +757,7 @@ form input[type="number"]{
   margin-right: 3rem;
   margin-bottom: 2rem;
   }
+  /* Aqui esta sendo as configuração em mobile da homepage */
 @media screen and (max-width: 984px){
   .secao{
     display: block;
@@ -765,6 +788,7 @@ form input[type="number"]{
     display: inline-block;
     width: 100%;
     margin-bottom: 1rem;
+    font-size: 25pt;
   }
 
   .imagem-container img{
@@ -772,6 +796,26 @@ form input[type="number"]{
     width: 400px;
 
   }
+  .descricao{
+    font-size: 25pt;
+  }
+  .nav-link {
+    font-size: 30pt; 
+    padding: 15px; 
+  }
+  .service-info h3{
+    font-size: 37pt;
+  }
+  
+.subtitulo {
+  font-size: 3rem;
+
+}
+.service-info .btn{
+  font-size: 25pt;
+}
+
+
 }
 
 @media screen and (max-width: 768px){
@@ -792,6 +836,7 @@ form input[type="number"]{
   }
   .nav-item{
     display: none;
+    font-size: 70pt;
   }
   .secao{
     display: block;

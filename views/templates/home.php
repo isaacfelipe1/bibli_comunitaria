@@ -2,7 +2,7 @@
     <div id="secao" class="secao"> 
         <div class="titulo-descricao">
             <p class="subtitulo">Sobre Nós</p>
-            <h2 class="descricao">
+            <h2 class="descricao ">
                 Biblioteca Comunitária, um ponto de cultura e humanização. 
                 Um espaço da produção de diferentes manifestações artísticas. 
                 Além de propiciar o acesso a diversidade literária para a comunidade, a biblioteca realiza rodas de leituras,
@@ -20,7 +20,7 @@
         <div class="service">
             <p class="subtitulo">Cursos Ofertados</p>
             <div class="service-info">
-                <h2 class="descricao">
+                <h2 class="descricao service-curso">
                     A Obra disponibiliza à comunidade diversos cursos profissionalizantes. Confira todos abaixo.
                 </h2>
                 <a href="#" class="btn">Ver mais</a> 
