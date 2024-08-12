@@ -21,7 +21,7 @@
                 <tr>
                     <td><?php echo $value['id_usuario']?></td>
                     <td><?php echo $value['nome']?></td>
-                    <td><?php echo ($value['sexo'] == 1) ? 'Masculino' : 'Feminino'; ?></td>
+                    <td><?php echo ($value['sexo'] == 0) ? 'Masculino' : 'Feminino'; ?></td>
                     <td><?php echo $value['idade']?></td>
                     <td><?php echo $value['telefone']?></td>
                     <td><?php echo $value['endereco']?></td>
