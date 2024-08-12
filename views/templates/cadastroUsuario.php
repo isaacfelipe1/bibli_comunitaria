@@ -87,14 +87,17 @@
             </div>
 
             <div class="label-input">
-                <div>
-                    <label for=""><strong class="label-strong">Observação:</strong></label>
-                </div>
-                <div>
-                    <textarea style="margin: 0.5rem 0 0 0;width: 35vw; height:15vh; border: 1px solid rgba(190, 186, 186, 0.726); margin-bottom:2rem" type="text" name="observacao">
-                    </textarea>
-                </div>
-            </div>
+    <div>
+        <label for=""><strong class="label-strong">Observação:</strong></label>
+    </div>
+    <div>
+        <textarea
+            style="margin: 0.5rem 0 0 0; width: 35vw; height: 15vh; border: 1px solid rgba(190, 186, 186, 0.726); margin-bottom: 2rem; resize: none;"
+            type="text" name="observacao">
+        </textarea>
+    </div>
+</div>
+
 
         </div>
         <div class="div-submit-reset">
