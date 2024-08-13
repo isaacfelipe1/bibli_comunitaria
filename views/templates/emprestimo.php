@@ -11,25 +11,22 @@ $usuario->execute();
 ?>
 <main>
     <h2>Empréstimo de Livros</h2>
-
 <fieldset class="fieldset-cadastro">
     <form class="form-cadastro" method="post">
         <div class="div-label-input">
             <div class="label-input">
-
                 <div class="label-input">
                     <div>
-                        <label for=""> <strong class="label-strong">Código Livro:</strong></label>
+                        <label for="fk_cod_livro"> <strong class="label-strong">Informe o Código do Livro:</strong></label>
                     </div>
                 </div>
                 <div>
-                    <input id="campo" style="margin: 0.5rem 0 0 0;width:5vw;padding: 10px" type="number" name="fk_cod_livro" placeholder="155">
+                    <input id="campo" style="margin: 0.5rem 0 0 0;width:10vw;padding: 10px" type="number" name="fk_cod_livro" placeholder="155" inputmode="numeric">
                 </div>
-                
             </div>
             <div class="label-input">
                 <div>
-                    <label for=""> <strong class="label-strong">Nome do usuario:</strong> </label>
+                    <label for="fk_cod_usuario"> <strong class="label-strong">Nome do usuario:</strong> </label>
                 </div>
                 <div>
                     <select name="fk_cod_usuario" id="campo" style="width: 10vw;margin: 1.5rem 0 0 0">
@@ -40,10 +37,9 @@ $usuario->execute();
                     <option value="<?php echo $item["id_usuario"]?>"><?php echo $item["nome"]?></option>
                     <?php
                         }
-                        ?>
+                    ?>
                     </select>
                 </div>
-                
             </div>
             <!--  
             <div class="label-input">
@@ -56,7 +52,6 @@ $usuario->execute();
                 
             </div>
             -->
-
         </div>
         <div class="div-submit-reset">
             <div class="submit-reset">
@@ -71,3 +66,14 @@ use models\EmprestimoModel;
 $cad = new EmprestimoModel();
 $cad->emprestar();
 ?>
+<style>
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+</style>

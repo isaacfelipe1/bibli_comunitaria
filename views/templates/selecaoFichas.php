@@ -15,7 +15,7 @@ if (!isset($_SESSION['user'])) {
     $excl->limparFichas();
     ?>
     <form method="post">
-        <a class="ficha-codigo" href="fichas" style="background-color: #047f52">Ver Fichas</a> <!-- Botão verde -->
+        <a class="ficha-codigo" href="fichas" style="background-color: #047f52">Ver Fichas</a> 
         <input class="ficha-codigo" type="submit" name='bt_limp_fich' value="Limpar fichas">
 
         <div class="table-container">
@@ -23,7 +23,7 @@ if (!isset($_SESSION['user'])) {
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Código</th>
+                        <th>Código do Livro</th>
                         <th>Título</th>
                     </tr>
                 </thead>
