@@ -21,12 +21,13 @@ if (!isset($_SESSION['user'])) {
                         <th class='rotulo'>Status</th>
                         <th class='rotulo'>Data Emprestimo</th>
                         <th class='rotulo'>Data Devolução</th>
-                    </tr>
+                        <th class='rotulo'>Atrasado</th> 
                 </thead>
                 <tbody>
                     <?php 
                     $emprestimo = models\ConsultaEmprestimoModel::listarEmprestimos();
                     foreach ($emprestimo as $value) {
+                        $atrasado = strtotime($value['data_devolucao']) < strtotime(date('Y-m-d')) ? 'Sim' : 'Não';
                         ?>
                         <tr>
                             <td><input type="radio" name="id_emprestimo" value="<?php echo $value['id_emprestimo']; ?>" required></td>
@@ -37,6 +38,7 @@ if (!isset($_SESSION['user'])) {
                             <td><?php echo $value['status']; ?></td>
                             <td><?php echo $value['data_registro']; ?></td>
                             <td><?php echo $value['data_devolucao']; ?></td>
+                            <td style="color: <?php echo $atrasado === 'Sim' ? 'red' : 'inherit'; ?>;"><?php echo $atrasado; ?></td>
                         </tr>
                     <?php 
                     }
