@@ -19,8 +19,8 @@
     <div id="other-services">
         <div class="service">
             <p class="subtitulo">Cursos Ofertados</p>
-            <div class="service-info">
-                <h2 class="descricao service-curso">
+            <div class=" service-info">
+                <h2 class=" descricao ervice-curso">
                     A Obra disponibiliza à comunidade diversos cursos profissionalizantes. Confira todos abaixo.
                 </h2>
                 <a href="#" class="btn">Ver mais</a> 
