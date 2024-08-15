@@ -14,7 +14,7 @@ if (!isset($_SESSION['user'])) {
             <select name="filter" id="filter" style="padding: 8px 12px; border-radius: 5px; border: 1px solid #ccc; font-size: 16px;">
                 <option value="todos" <?php echo isset($_POST['filter']) && $_POST['filter'] == 'todos' ? 'selected' : ''; ?>>Todos</option>
                 <option value="atrasados" <?php echo isset($_POST['filter']) && $_POST['filter'] == 'atrasados' ? 'selected' : ''; ?>>Atrasados</option>
-            </select><br><br>
+            </select><br>
             <input class="bt-submit" type="submit" name="bt-filtrar" value="Aplicar Filtro">
         </div>
         <div class="table-container">
