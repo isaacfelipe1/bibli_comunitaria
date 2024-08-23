@@ -30,8 +30,8 @@ class EmprestimoModel extends Model
             
             $emprestimo = \MySql::connect()->prepare("
                 INSERT INTO emprestado 
-                (fk_cod_livro, fk_cod_usuario, status, data_registro, data_devolucao, usuario_logado) 
-                VALUES (?, ?, 'Emprestado', ?, ?, ?)
+                (fk_cod_livro, fk_cod_usuario, status, data_registro, data_devolucao, usuario_logado, quantidade_renovacoes) 
+                VALUES (?, ?, 'Emprestado', ?, ?, ?, 0)
             ");
             $emprestimo->execute([$fk_cod_livro, $fk_cod_usuario, $data_emprestimo, $data_devolucao, $usuario_logado]);
 
@@ -44,18 +44,31 @@ class EmprestimoModel extends Model
     }
 
     public function renovarEmprestimo($id_emprestimo) {
-        $query = \MySql::connect()->prepare("SELECT data_devolucao FROM emprestado WHERE id_emprestimo = ?");
+        $limiteRenovacoes = 1;
+
+        $query = \MySql::connect()->prepare("
+            SELECT data_devolucao, quantidade_renovacoes 
+            FROM emprestado 
+            WHERE id_emprestimo = ?
+        ");
         $query->execute([$id_emprestimo]);
         $emprestimo = $query->fetch();
 
         if ($emprestimo) {
+            if ($emprestimo['quantidade_renovacoes'] >= $limiteRenovacoes) {
+                echo "<script>alert('Limite de renovações atingido. Não é possível renovar o empréstimo novamente.');</script>";
+                return;
+            }
+
             $novaDataDevolucao = date('Y-m-d', strtotime($emprestimo['data_devolucao'] . ' +7 days'));
+            $quantidadeRenovacoesAtualizada = $emprestimo['quantidade_renovacoes'] + 1;
+
             $atualizaEmprestimo = \MySql::connect()->prepare("
                 UPDATE emprestado 
-                SET data_devolucao = ? 
+                SET data_devolucao = ?, quantidade_renovacoes = ? 
                 WHERE id_emprestimo = ?
             ");
-            $atualizaEmprestimo->execute([$novaDataDevolucao, $id_emprestimo]);
+            $atualizaEmprestimo->execute([$novaDataDevolucao, $quantidadeRenovacoesAtualizada, $id_emprestimo]);
 
             if ($atualizaEmprestimo->rowCount() > 0) {
                 echo "<script>alert('Empréstimo renovado com sucesso! Nova data de devolução: {$novaDataDevolucao}');</script>";
@@ -67,5 +80,6 @@ class EmprestimoModel extends Model
         }
     }
 }
+
 
 ?>
