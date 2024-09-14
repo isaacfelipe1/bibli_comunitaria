@@ -244,32 +244,6 @@ body{
   }
 }
 
-#footer {
-  position:relative;
-  margin-top: 20rem;
-  bottom: 0;
-  width: 100%;
-  color: #f8f8ff;
-  background-color: #04aa6d;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  z-index: 1;
-}
-.contact-info{
-  align-items: center;
-  justify-items: center;
-}
-
-.footer-brand {
-  position: relative;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
-}.footer-brand h3{
-  color: var(--primary-text-color);
-  font-size: 1.5rem;  
-  width: max-content;
-}
 
 .contato{
   align-items: center;
