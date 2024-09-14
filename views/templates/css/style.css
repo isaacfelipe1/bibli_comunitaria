@@ -407,9 +407,6 @@ tela de consulta de livros*/
   border-radius: 5px; 
   background-color: #ffffff; 
    
-  
-  
-  
 }
 
 /* Estilo da Tabela */
@@ -420,9 +417,9 @@ table {
 }
 thead th {
   position: sticky;
-  top: 0;
+  /* top: 0; */
   background-color: #f9f9f9; /* Cor de fundo para o cabeçalho */
-  z-index: 1; /* Garante que o cabeçalho fique acima do conteúdo da tabela */
+  /* z-index: 1;  */
   border-bottom: 1px solid #ddd; /* Adiciona uma borda ao final do cabeçalho */
 
 }
@@ -481,6 +478,16 @@ tbody tr:nth-child(even) {
   padding: 25px;
   width: 45px;
 }
+.filter-container {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espaço entre os elementos */
+}
 
 /* Estilo dos Campos de Pesquisa */
 .campo-pesquisa {
@@ -533,24 +540,25 @@ tbody tr:nth-child(even) {
 
 }
 .bt-submit {
-  background-color: #04aa6d; 
-  color: white; 
-  border: none; 
-  padding: 12px 24px; 
-  border-radius: 5px; 
-  cursor: pointer; 
-  font-size: 16px; 
-  font-weight: 500; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
-  transition: background-color 0.3s ease, transform 0.2s ease; 
-  max-width: 300px; 
-  display: block; 
-  margin: 20px auto; 
+    background-color: #04aa6d;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    max-width: 180px; /* Ajusta o tamanho máximo do botão */
+    margin: 10px;
+    text-align: center;
 }
 
 .bt-submit:hover {
   background-color: #038d58; 
   transform: translateY(-2px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .bt-submit:active {
@@ -627,6 +635,7 @@ form input[type="number"]{
 }
 .bt-submit:hover{
   background-color: #047f52;
+  transform: translateY(-2px);
 }
 
 .bt-reset{
@@ -848,6 +857,26 @@ form input[type="number"]{
     width: 400px;
 
   }
+  .filter-container {
+    flex-direction: column;
+}
+.filter-container select {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Adiciona transição */
+}
+.filter-container select:focus {
+    border-color: var(--main-color); /* Altera a cor ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+.bt-submit {
+    width: 80%;
+    margin: 10px auto;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
 
 }
 

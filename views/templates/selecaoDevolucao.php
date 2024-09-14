@@ -17,6 +17,8 @@ if (!isset($_SESSION['user'])) {
             </select><br>
             <input class="bt-submit" type="submit" name="bt-filtrar" value="Aplicar Filtro">
         </div>
+        <input class='bt-submit' type='submit' name='bt-dev' value='Devolver Livro'>
+        <input class='bt-submit' type='submit' name='bt-renovar' value='Renovar Empréstimo'>
         <div class="table-container">
             <table id="customers">
                 <thead>
@@ -79,8 +81,7 @@ if (!isset($_SESSION['user'])) {
                 </tbody>
             </table>
         </div>
-        <input class='bt-submit' type='submit' name='bt-dev' value='Devolver Livro'>
-        <input class='bt-submit' type='submit' name='bt-renovar' value='Renovar Empréstimo'>
+        
     </form>
 </main>
 
