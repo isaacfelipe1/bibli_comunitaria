@@ -394,11 +394,9 @@ input[type="password"]{
 ****************************
 tela de consulta de livros*/
 
-/* Estilo do Contêiner Responsivo */
-/* Estilo do Contêiner Responsivo */
 .table-container {
-  max-height: 250px; /* Ajuste para altura máxima do container da tabela conforme necessário */
-  max-width: 95%; /* Ajuste para largura máxima do container da tabela conforme necessário */
+  max-height: 250px; 
+  max-width: 95%; 
   overflow-x: auto; 
   overflow-y: auto; 
   margin: 1rem 2rem 3rem; 
@@ -418,14 +416,14 @@ table {
 thead th {
   position: sticky;
   /* top: 0; */
-  background-color: #f9f9f9; /* Cor de fundo para o cabeçalho */
+  background-color: #f9f9f9; 
   /* z-index: 1;  */
-  border-bottom: 1px solid #ddd; /* Adiciona uma borda ao final do cabeçalho */
+  border-bottom: 1px solid #ddd; 
 
 }
 
 tbody tr:nth-child(even) {
-  background-color: #f2f2f2; /* Cor de fundo alternada para linhas pares */
+  background-color: #f2f2f2; 
 }
 .table-container {
   width: 100%;
@@ -486,7 +484,7 @@ tbody tr:nth-child(even) {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Espaço entre os elementos */
+    gap: 10px; 
 }
 
 /* Estilo dos Campos de Pesquisa */
@@ -550,7 +548,7 @@ tbody tr:nth-child(even) {
     font-weight: 500;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.2s ease;
-    max-width: 180px; /* Ajusta o tamanho máximo do botão */
+    max-width: 180px; 
     margin: 10px;
     text-align: center;
 }
@@ -740,7 +738,7 @@ form input[type="number"]{
   margin-right: 3rem;
   margin-bottom: 2rem;
   }
-  /* Aqui esta sendo as configuração em mobile da homepage */
+  
 @media screen and (max-width: 984px){
   .secao{
     display: block;
@@ -865,11 +863,11 @@ form input[type="number"]{
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 16px;
-    transition: border-color 0.3s ease; /* Adiciona transição */
+    transition: border-color 0.3s ease; 
 }
 .filter-container select:focus {
-    border-color: var(--main-color); /* Altera a cor ao focar */
-    outline: none; /* Remove o contorno padrão */
+    border-color: var(--main-color); 
+    outline: none;
 }
 
 .bt-submit {
