@@ -9,7 +9,6 @@ if (!isset($_SESSION['user'])) {
 }
 ?>
 
-<!-- Ícones de Voltar e Sair -->
 <div id="div-voltar" style="margin-bottom: 1rem; display: flex; align-items: center; padding: 0 1rem;">
     <a href="javascript:history.back()" style="margin-right: auto; padding-left: 1rem;">
         <i class="bi bi-arrow-left-circle" style="color:black; font-size: 2.5rem;"></i> 
@@ -20,8 +19,6 @@ if (!isset($_SESSION['user'])) {
         </button>
     </form>
 </div>
-
-<!-- Conteúdo principal -->
 <div id="div-cadastro">
     <div id="div-opcao-cadastro">
         <a href="cadastroUsuario">
