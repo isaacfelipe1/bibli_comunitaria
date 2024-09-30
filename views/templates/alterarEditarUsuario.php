@@ -8,7 +8,7 @@
 		Alterar Informações do usuário
 	</h2>
 <fieldset class="fieldset-cadastro">
-<form class="form-cadastro" method="post">
+<form class="form-cadastro" method="post" enctype="multipart/form-data">
 	<div class="div-label-input">
 		<div class="label-input">
 			<div>
@@ -43,23 +43,21 @@
 				<label for=""> <strong class="label-strong">Observacao:</strong></label>
 			</div>
 			<div>
-				<textarea style="margin: 0.5rem 0 0 0;width: 35vw; height:15vh; border: 1px solid rgba(190, 186, 186, 0.726); margin-bottom:2rem" name="observacao" id="" cols="30" rows="10" value="<?php echo $value["observacao"]; ?>"></textarea>
+				<textarea style="margin: 0.5rem 0 0 0;width: 35vw; height:15vh; border: 1px solid rgba(190, 186, 186, 0.726); margin-bottom:2rem" name="observacao" id="" cols="30" rows="10"><?php echo $value["observacao"]; ?></textarea>
 			</div>
 		</div>
 
-			
 		<div class="label-input">
 			<div>
 				<label for=""> <strong class="label-strong">Sexo:</strong></label>
 			</div>
 			<div>
 				<select id="campo" style="width:100px" name="sexo" required>
-                    <option value="0">Masculino</option>
-                    <option value="1">Feminino</option>
+                    <option value="0" <?php echo $value["sexo"] == 0 ? 'selected' : ''; ?>>Masculino</option>
+                    <option value="1" <?php echo $value["sexo"] == 1 ? 'selected' : ''; ?>>Feminino</option>
                 </select>
 			</div>
 		</div>
-
 
 		<div class="label-input">
 			<div>
@@ -68,23 +66,30 @@
 			<div>
 				<select id="campo" name="idade" required>
                     <?php 
-                        $i = 10;
-                        for($i=10;$i<=100;$i++) {
-                            $value = $i;
+                        for($i = 10; $i <= 100; $i++) {
                     ?>
-                        <option value="<?php echo $value; ?>"><?php echo $value; ?></option>
-                        <?php 
+                        <option value="<?php echo $i; ?>" <?php echo $value["idade"] == $i ? 'selected' : ''; ?>><?php echo $i; ?></option>
+                    <?php 
                         }
                     ?>
                 </select>  
 			</div>
 		</div>
+
+		<div class="label-input">
+			<div>
+				<label for=""> <strong class="label-strong">Foto:</strong></label>
+			</div>
+			<div>
+				<input type="file" name="foto" accept="image/*">
+			</div>
+		</div>
+
 		<input style="display: block;" class="bt-submit" type="submit" name="bt-atualizar" value="Atualizar">
 	</div>
 </form>
 </fieldset>
 </main>
-
 
 <?php 
 }
