@@ -11,11 +11,11 @@ if (!isset($_SESSION['user'])) {
 
 <form method="post" action="" style="display: flex; align-items: center; margin: 20px;">
     <button class="bt-back" type="button" onclick="window.location.href='home'" style="display: flex; align-items: center; background: none; border: none; cursor: pointer;">
-        <i style="color:#047f52; font-size: 2.5rem; margin-right: 10px;" class="bi bi-arrow-left-circle"></i>
-        <span style="font-size: 1.2rem; color: #047f52;"></span>
+        <i style="color:#000; font-size: 2.5rem; margin-right: 10px;" class="bi bi-arrow-left-circle"></i>
+        <span style="font-size: 1.2rem; color: #000;"></span>
     </button>
     <button class="bt-logout" type="submit" name="logout" style="background: none; border: none; cursor: pointer; margin-left: auto;">
-        <i style="color:#047f52; font-size: 2.5rem;" class="bi bi-box-arrow-left"></i>
+        <i style="color:#000; font-size: 2.5rem;" class="bi bi-box-arrow-left"></i>
     </button>
 </form>
 <div id="div-cadastro">

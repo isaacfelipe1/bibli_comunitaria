@@ -8,11 +8,20 @@ if (!isset($_SESSION['user'])) {
     exit;
 }
 ?>
-<!-- <form method="post" action="">
-    <p>
-        <button class="bt-logout" type="submit" name="logout"><i style="color:#047f52; font-size: 2.5rem" class="bi bi-box-arrow-left"></i> </button>
-    </p>
-</form> -->
+
+<!-- Ícones de Voltar e Sair -->
+<div id="div-voltar" style="margin-bottom: 1rem; display: flex; align-items: center; padding: 0 1rem;">
+    <a href="javascript:history.back()" style="margin-right: auto; padding-left: 1rem;">
+        <i class="bi bi-arrow-left-circle" style="color:black; font-size: 2.5rem;"></i> 
+    </a>
+    <form method="post" action="" style="margin-left: auto;">
+        <button class="bt-logout" type="submit" name="logout" style="background: none; border: none; cursor: pointer;">
+            <i class="bi bi-box-arrow-left" style="color:black; font-size: 2.5rem;"></i>
+        </button>
+    </form>
+</div>
+
+<!-- Conteúdo principal -->
 <div id="div-cadastro">
     <div id="div-opcao-cadastro">
         <a href="cadastroUsuario">
@@ -69,3 +78,12 @@ if (!isset($_SESSION['user'])) {
         </a>
     </div>
 </div>
+
+<?php
+use models\LogoutModel;
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
+    $cad = new LogoutModel();
+    $cad->logout();
+}
+?>
