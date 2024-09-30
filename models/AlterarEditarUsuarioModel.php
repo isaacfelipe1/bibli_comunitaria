@@ -57,7 +57,7 @@ class AlterarEditarUsuarioModel extends Model
                         alert('Usuário alterado com sucesso!');
                     }
                     cadastro();
-                     window.location.href = window.location.origin + '/selecaoAlterarUsuario.php';
+                    window.location.href='localhost:8080/selecaoAlterarUsuario.php';
                 </script>";
             }
         }
